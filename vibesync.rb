@@ -5,20 +5,20 @@
 class Vibesync < Formula
   desc "Auto-sync screenshots to remote machines and swap clipboard paths"
   homepage "https://github.com/Usoroh/vibesync"
-  version "0.1.5"
+  version "0.1.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Usoroh/vibesync/releases/download/v0.1.5/vibesync_darwin_amd64.tar.gz"
-      sha256 "e8ea53a813e1fc44537beea0a0c904e3cb8d7b8f29f185a290a40ceb785378c7"
+      url "https://github.com/Usoroh/vibesync/releases/download/v0.1.6/vibesync_darwin_amd64.tar.gz"
+      sha256 "a46aad6a4226bffacd695a9e55e851fbf51204d4979aaaac969ac4b65060721b"
 
       define_method(:install) do
         bin.install "vibesync"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Usoroh/vibesync/releases/download/v0.1.5/vibesync_darwin_arm64.tar.gz"
-      sha256 "fc48ae20640f583f6eb3aef6cd71b86f5621c525d4538d1bbe12b286345b4b20"
+      url "https://github.com/Usoroh/vibesync/releases/download/v0.1.6/vibesync_darwin_arm64.tar.gz"
+      sha256 "f311f1813b74151ccb150269f02be0b0b722b8f3017e9d04f47c1ef29ce2601d"
 
       define_method(:install) do
         bin.install "vibesync"
@@ -28,15 +28,15 @@ class Vibesync < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Usoroh/vibesync/releases/download/v0.1.5/vibesync_linux_amd64.tar.gz"
-      sha256 "3e1642507356a9943dd17a280e0962cc55652598a52a41854c17b22a5363b3e2"
+      url "https://github.com/Usoroh/vibesync/releases/download/v0.1.6/vibesync_linux_amd64.tar.gz"
+      sha256 "9e23ebb237c905a1b383c794072c59461468456bd32becbdaf59c7aec6a8b0a8"
       define_method(:install) do
         bin.install "vibesync"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Usoroh/vibesync/releases/download/v0.1.5/vibesync_linux_arm64.tar.gz"
-      sha256 "9b9338aabb4f32da4a4f164beb516aa27586b881f5342d15b0739bb7dfc893c8"
+      url "https://github.com/Usoroh/vibesync/releases/download/v0.1.6/vibesync_linux_arm64.tar.gz"
+      sha256 "bd06d94c457d372b38e512b0fc2d3e1dacd05133c5e6b93ea688f1ef3c243b8e"
       define_method(:install) do
         bin.install "vibesync"
       end
